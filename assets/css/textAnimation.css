@@ -1,0 +1,26 @@
+.typing-container {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f77f42;
+  font-family: Arial, sans-serif;
+  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#typing {
+  display: inline-block;
+  border-right: 2px solid #f77f42;
+  animation: blink 0.7s steps(2, start) infinite;
+}
+
+
+@keyframes blink {
+  from {
+    border-right-color: #f77f42;
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
