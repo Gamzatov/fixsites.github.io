@@ -1,9 +1,8 @@
 .typing-container {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   color: #f77f42;
   font-family: Arial, sans-serif;
-  height: 40px;
   overflow: hidden;
   white-space: nowrap;
 }

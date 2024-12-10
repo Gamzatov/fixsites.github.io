@@ -254,7 +254,7 @@ a:hover {
 
 .flex_wrapper {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     column-gap: 30px;
     margin-top: 80px;
 }
@@ -422,13 +422,46 @@ a:hover {
     font-size: 14px;
     max-width: 140px;
 }
-.orange.small_title{
+
+.orange.small_title {
     text-align: center;
     margin-top: 20px;
 }
 
 .list {
     padding-left: 20px;
+}
+
+.tag_text {
+    transition: 0.3s ease;
+}
+
+.flex_out>.flex_item:hover .tag_text {
+    background-color: #FF924D;
+}
+
+.outer_icon {
+    fill: #FF924D;
+    width: 120px;
+    height: 120px;
+}
+
+.outer-icon-wrapper {
+    text-align: center;
+}
+
+.small_title.orange.pseudo-title {
+    text-align: left;
+}
+
+.main_inner.image_container svg {
+    max-width: 800px;
+    width: 100%;
+    vertical-align: middle;
+    margin-top: auto;
+    align-self: flex-end;
+    max-height: 500px;
+    height: 100%;
 }
 
 @media(max-width:762px) {
