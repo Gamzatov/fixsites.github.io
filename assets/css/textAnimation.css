@@ -23,3 +23,15 @@
     border-right-color: transparent;
   }
 }
+
+@media(max-width:762px) {
+  .typing-container {
+    font-size: 2rem;
+  }
+
+  .main_title {
+    font-weight: 900;
+    padding: 122px 0 0 0;
+    color: #fff;
+  }
+}

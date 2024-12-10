@@ -1,17 +1,19 @@
-function animation() {        document.getElementById("stroke1").classList.toggle("rotate1");
+function animation() {
+    document.getElementById("stroke1").classList.toggle("rotate1");
     document.getElementById("stroke2").classList.toggle("opacity");
-        document.getElementById("stroke3").classList.toggle("rotate2");
-    }
+    document.getElementById("stroke3").classList.toggle("rotate2");
+    $(".navbar").toggleClass("expand");
+}
 
-    //with help from https://codepen.io/chriscoyier/pen/EyRroJ
+//with help from https://codepen.io/chriscoyier/pen/EyRroJ
 
-    var element = document.getElementById("burger");
-    element.addEventListener("click", function(event) {
-      event.preventDefault();
-      document.getElementById("tap-circle").classList.remove("click-animation");
-      void element.offsetWidth;
-      document.getElementById("tap-circle").classList.add("click-animation");
-    }, false);
+var element = document.getElementById("burger");
+element.addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("tap-circle").classList.remove("click-animation");
+    void element.offsetWidth;
+    document.getElementById("tap-circle").classList.add("click-animation");
+}, false);
 //close nav after click mobile
 $(document).ready(function () {
     $('.navLink').on('click', function () {
