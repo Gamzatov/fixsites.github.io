@@ -464,6 +464,52 @@ a:hover {
     height: 100%;
 }
 
+.footer_flex {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+}
+
+footer {
+    background-color: #111;
+    padding: 80px 0;
+}
+
+.footer_text>.small_title.orange {
+    text-align: left;
+}
+
+.footer_img svg {
+    width: 100%;
+    max-width: 800px;
+}
+
+.footer_img {
+    width: 50%;
+}
+
+.footer_text {
+    width: 40%;
+}
+
+.footer_link {
+    background-color: #FF924D;
+    color: #111;
+    padding: 8px 15px;
+    border-radius: 15px;
+    transition: .2s;
+
+}
+
+.footer_link:hover {
+    text-decoration: none;
+}
+
+.footer_text {
+    display: flex;
+    justify-content: center;
+}
+
 @media(max-width:762px) {
     .navbar {
         position: absolute;
@@ -472,8 +518,22 @@ a:hover {
         background-color: #fff;
     }
 
+    .footer_img {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .footer_text {
+        width: 100%;
+        padding: 15px 0;
+    }
+
     .navLink.desk.btn_flex {
         display: block;
+    }
+
+    .footer_flex {
+        flex-direction: column-reverse;
     }
 
     .navbar.expand {
@@ -483,26 +543,32 @@ a:hover {
         background-color: #fff;
         box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     }
-    .main{
+
+    .main {
         flex-direction: column;
     }
-    .flex_wrapper{
+
+    .flex_wrapper {
         flex-direction: column;
         gap: 20px;
     }
-    .section{
+
+    .section {
         padding: 15px;
     }
-    .main_title{
+
+    .main_title {
         font-size: 3rem;
     }
-    .main{
+
+    .main {
         padding: 15px;
     }
 
     .mob {
         display: none;
     }
+
     .navbar {
         position: absolute;
         top: 50px;
@@ -517,13 +583,16 @@ a:hover {
         background-color: #fff;
         box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     }
-    .title{
+
+    .title {
         font-size: 2rem !important;
     }
-    .outer-icon-wrapper{
-        text-align: left ;
+
+    .outer-icon-wrapper {
+        text-align: left;
     }
-    .outer-icon-wrapper svg{
+
+    .outer-icon-wrapper svg {
         width: 60px;
         height: 60px;
     }
