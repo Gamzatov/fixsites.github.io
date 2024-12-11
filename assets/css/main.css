@@ -29,6 +29,18 @@ a:hover {
     opacity: 0.85;
     text-decoration: underline;
 }
+.navLink{
+    height: 61px;
+}
+.second{
+    --animate-delay: 0.5s;
+}
+.third{
+  --animate-delay: 1s;
+}
+.fourth{
+    --animate-delay: 1.5s;
+}
 
 .content {
     text-align: center;
