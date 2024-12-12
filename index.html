@@ -34,7 +34,7 @@
                         <input type="text" name="name" placeholder="Ваше ім’я">
                     </div>
                     <div class="input-container phone">
-                        <input type="text" name="phone" placeholder="Номер телефону">
+                        <input type="text" name="phone" id="phone" placeholder="+38 (___) ___-__-__">
                     </div>
 
                     <textarea name="message" placeholder="Ваше повідомлення" id=""></textarea>
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                     <div class="btns_wrapper">
-                        <a href="#" class="btn">Звʼязатися</a>
+                        <a href="#" class="btn pop_btn">Звʼязатися</a>
                         <a href="#" class="btn btn_transparent">Детальніше</a>
                     </div>
                 </div>
@@ -1318,6 +1318,13 @@
     <script src="assets/js/pop.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.9/jquery.inputmask.bundle.min.js" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            Inputmask("+38 (999) 999-99-99").mask("#phone");
+        });
+    </script>
+
 
 </body>
 
