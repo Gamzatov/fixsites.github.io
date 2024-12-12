@@ -5,7 +5,6 @@ function animation() {
     $(".navbar").toggleClass("expand");
 }
 
-//with help from https://codepen.io/chriscoyier/pen/EyRroJ
 
 var element = document.getElementById("burger");
 element.addEventListener("click", function (event) {

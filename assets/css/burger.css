@@ -2,17 +2,18 @@
     display: none;
     transition: all 500ms ease-in-out;
     position: absolute;
-    top: 50%;
+    top: 19px;
     right: 15px;
-    transform: translate(0, -50%);
+    /* transform: translate(0, -50%); */
 }
 
 #stroke1, #stroke2, #stroke3 {
     cursor: pointer;
     border-top: 3px solid #111;
     width: 35px;
-    height: 5px;
+    height: 0px;
     transition: all 500ms ease-in-out;
+    margin: 3px 0;
 }
 
 #tap-circle {
@@ -34,7 +35,8 @@
 }
 
 .rotate2 {
-    transform: rotate(-45deg) translateY(-5px) translateX(3px);
+    transform:  rotate(-45deg) translateY(-5px) translateX(3px);
+
 }
 
 .click-animation {

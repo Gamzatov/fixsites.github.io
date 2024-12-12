@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./assets/css/svgAnimate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -24,7 +24,7 @@
         <div class="wrap">
 
             <a href="#" class="logo logo-head">
-                <img src="./assets/images/black.png" alt="">
+                <img src="./assets/icons/logo.png" style="padding-top: 15px;" alt="">
             </a>
             <div id="burger" onclick="animation()">
                 <div id="stroke1"></div>
@@ -65,7 +65,7 @@
         <div class="container">
             <div class="main">
                 <div class="main_inner">
-                    <h1 class="main_title">FIXMYSITE</h1>
+                    <h1 class="main_title" data-aos="fade-up" data-aos-duration="3000">FIXMYSITE</h1>
                     <div class="animate_text">
                         <div class="typing-container">
                             <span id="typing"></span>
@@ -642,11 +642,12 @@
     </section>
     <section class="second_sec section" id="whatWeDo">
         <div class="container">
-            <p class="title">
+            <p class="title" data-aos="fade-up"
+            data-aos-duration="3000">
                 Ми створюємо сучасні та функціональні сайти для вирішення будь-яких завдань вашого бізнесу:
             </p>
             <div class="flex_wrapper">
-                <div class="animate__animated flex_item animate__backInUp ">
+                <div class=" flex_item">
                     <div class="icon_wrapper">
                         <svg xmlns="http://www.w3.org/2000/svg" style="overflow: visible;"
                             xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" version="1.0"
@@ -692,7 +693,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="animate__animated flex_item animate__backInUp second">
+                <div class=" flex_item second">
                     <div class="icon_wrapper">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             preserveAspectRatio="xMidYMid meet" version="1.0" viewBox="0.0 0.0 364.6 500.0"
@@ -727,9 +728,11 @@
                     </div>
 
                     <div class="flex_info">
-                        <p class="small_title">
-                            Портфоліо
-                        </p>
+                        <div class="title_item">
+                            <p class="small_title" data-aos-anchor=".title_item">
+                                Портфоліо
+                            </p>
+                        </div>
                         <p>
                             Покажіть свої роботи з
                             найкращого боку.
@@ -738,7 +741,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="animate__animated flex_item animate__backInUp third">
+                <div class=" flex_item third">
                     <div class="icon_wrapper">
                         <svg style="overflow: visible;" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" version="1.0"
@@ -781,7 +784,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="animate__animated flex_item animate__backInUp fourth">
+                <div class=" flex_item fourth">
                     <div class="icon_wrapper">
                         <svg style="overflow: visible;" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" version="1.0"
@@ -830,7 +833,8 @@
     </section>
     <section class="third_sec section" id="whyWe">
         <div class="container">
-            <p class="title orange">
+            <p class="title orange" data-aos="fade-up"
+            data-aos-duration="3000">
                 Чому обирають нас
             </p>
             <div class="flex_wrapper outer">
@@ -922,7 +926,8 @@
     </section>
     <section class="second_sec section" id="price">
         <div class="container">
-            <p class="title orange">
+            <p class="title orange" data-aos="fade-up"
+            data-aos-duration="3000">
                 Вартість
             </p>
             <div class="flex_wrapper">
@@ -1064,7 +1069,8 @@
     </section>
     <section class="third_sec section" id="additional">
         <div class="container">
-            <p class="title orange">
+            <p class="title orange" data-aos="fade-up"
+            data-aos-duration="3000">
                 Додаткові послуги
             </p>
             <div class="flex_wrapper outer">
@@ -1228,7 +1234,8 @@
                 </div>
                 <div class="footer_text">
                     <div class="footer_text-inner">
-                        <p class="title orange">
+                        <p class="title orange" data-aos="fade-up"
+                        data-aos-duration="3000">
                             Контакти
                         </p>
                         <p class="small_title white">
@@ -1251,6 +1258,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/textAnimate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

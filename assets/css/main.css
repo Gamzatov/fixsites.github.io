@@ -29,16 +29,20 @@ a:hover {
     opacity: 0.85;
     text-decoration: underline;
 }
-.navLink{
+
+.navLink {
     height: 61px;
 }
-.second{
+
+.second {
     --animate-delay: 0.5s;
 }
-.third{
-  --animate-delay: 1s;
+
+.third {
+    --animate-delay: 1s;
 }
-.fourth{
+
+.fourth {
     --animate-delay: 1.5s;
 }
 
@@ -125,6 +129,7 @@ a:hover {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    padding-top: 10px;
 }
 
 .navbar .menu li {
@@ -522,6 +527,34 @@ footer {
     justify-content: center;
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width:900px) {
+    .flex_wrapper {
+        overflow-x: scroll;
+        padding: 30px 0;
+    }
+}
+
+
 @media(max-width:762px) {
     .navbar {
         position: absolute;
@@ -558,6 +591,14 @@ footer {
 
     .main {
         flex-direction: column;
+    }
+
+    .outer_inner {
+        height: 100%;
+    }
+
+    .main_sec {
+        height: 723px;
     }
 
     .flex_wrapper {
