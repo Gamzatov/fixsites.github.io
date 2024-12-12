@@ -31,7 +31,7 @@ a:hover {
 }
 
 .navLink {
-    height: 61px;
+    height: 52px;
 }
 
 .second {
@@ -711,6 +711,10 @@ textarea:focus{
     transform: translateY(-50%);
     font-size: 16px;
     color: #999;
+}
+.footer_link >svg:hover{
+    fill: #FF924D;
+    border: 1px solid #FF924D;
 }
 
 @media(max-width:1002px) {
