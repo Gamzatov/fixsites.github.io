@@ -16,9 +16,10 @@ element.addEventListener("click", function (event) {
 //close nav after click mobile
 $(document).ready(function () {
     $('.navLink').on('click', function () {
-        $('.navbar').toggleClass('expand');
-        $('menu-toggle').toggleClass('burger');
-        return false;
+        document.getElementById("stroke1").classList.toggle("rotate1");
+        document.getElementById("stroke2").classList.toggle("opacity");
+        document.getElementById("stroke3").classList.toggle("rotate2");
+        $(".navbar").toggleClass("expand");
     });
 });
 

@@ -27,7 +27,7 @@
 }
 
 .rotate1 {
-    transform: rotate(45deg) translateY(5px) translateX(2px);
+    transform: rotate(45deg) translateY(5px) translateX(4px);
 }
 
 .opacity {
